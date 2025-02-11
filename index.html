@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECHSAGE Solutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Link to External CSS -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-blue-600">TECHSAGE Solutions</a>
+      <!-- Mobile menu button -->
+      <button class="block lg:hidden text-gray-700 focus:outline-none" id="mobile-menu-button">
+        <span class="block w-6 h-0.5 bg-gray-600 mb-1"></span>
+        <span class="block w-6 h-0.5 bg-gray-600 mb-1"></span>
+        <span class="block w-6 h-0.5 bg-gray-600"></span>
+      </button>
+      <div class="space-x-6 hidden lg:flex">
+        <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
+        <a href="#about" class="text-gray-700 hover:text-blue-600">About Us</a>
+        <a href="#services" class="text-gray-700 hover:text-blue-600">Services</a>
+        <a href="#portfolio" class="text-gray-700 hover:text-blue-600">Portfolio</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="lg:hidden bg-white shadow-lg hidden" id="mobile-menu">
+      <a href="#home" class="block py-2 px-6 text-gray-700">Home</a>
+      <a href="#about" class="block py-2 px-6 text-gray-700">About Us</a>
+      <a href="#services" class="block py-2 px-6 text-gray-700">Services</a>
+      <a href="#portfolio" class="block py-2 px-6 text-gray-700">Portfolio</a>
+      <a href="#contact" class="block py-2 px-6 text-gray-700">Contact</a>
+    </div>
+  </nav>
+
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- Home Section -->
+  <section id="home" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-12">
+    <div class="container mx-auto text-center">
+      <h1 class="text-5xl font-bold mb-4" data-aos="fade-up">Innovative IT Solutions</h1>
+      <p class="text-xl mb-8" data-aos="fade-up" data-aos-delay="300">We deliver cutting-edge technology for your business.</p>
+      
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">About Us</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div data-aos="fade-right">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Team" class="rounded-lg shadow-lg">
+        </div>
+        <div data-aos="fade-left">
+          <p class="text-gray-700 mb-4">
+            We are a leading IT company specializing in software development, cloud solutions, and cybersecurity. Our mission is to empower businesses with innovative technology.
+          </p>
+          <p class="text-gray-700">
+            With a team of experienced professionals, we deliver tailored solutions to meet your unique needs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-50 py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Software Development" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-bold mb-2">Software Development</h3>
+          <p class="text-gray-700">We build custom software solutions to streamline your business operations.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center" data-aos="fade-up" data-aos-delay="400">
+          <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cloud Solutions" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-bold mb-2">Cloud Solutions</h3>
+          <p class="text-gray-700">We provide scalable and secure cloud infrastructure for your business.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center" data-aos="fade-up" data-aos-delay="600">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cybersecurity" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-bold mb-2">Cybersecurity</h3>
+          <p class="text-gray-700">We protect your digital assets with advanced cybersecurity solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Portfolio</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Project 1" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
+          <p class="text-gray-700">A scalable e-commerce platform built for a global retail brand.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="400">
+          <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Project 2" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-bold mb-2">Mobile App</h3>
+          <p class="text-gray-700">A cross-platform mobile app for a healthcare startup.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="600">
+          <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Project 3" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-bold mb-2">Data Analytics Dashboard</h3>
+          <p class="text-gray-700">A real-time analytics dashboard for a financial services company.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-50 py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Contact Us</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div data-aos="fade-right">
+          <p class="text-gray-700 mb-4">We'd love to hear from you! Reach out to us for any inquiries or collaborations.</p>
+          <p class="text-gray-700"><strong>Email:</strong> info@techsage.com</p>
+          <p class="text-gray-700"><strong>Phone:</strong> +1 (123) 456-7890</p>
+        </div>
+        <div data-aos="fade-left">
+          <form class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700">Name</label>
+              <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg">
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700">Email</label>
+              <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg">
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block text-gray-700">Message</label>
+              <textarea id="message" class="w-full px-4 py-2 border rounded-lg" rows="4"></textarea>
+            </div>
+            <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 w-full">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <script>
+    // Get the form and the input fields
+    const form = document.querySelector('form');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+    
+    // Add event listener to the form submit button
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the form from submitting immediately
+      
+      // Check if any of the fields are empty
+      if (nameInput.value === "" || emailInput.value === "" || messageInput.value === "") {
+        // If any field is empty, show an alert
+        alert("Please fill in all the fields.");
+      } else {
+        // If all fields are filled, show the success alert
+        alert("Message sent successfully!");
+  
+        // Clear the form fields
+        nameInput.value = "";
+        emailInput.value = "";
+        messageInput.value = "";
+      }
+    });
+  </script>
+  
+
+<!-- Chatbot -->
+<div class="chatbot">
+    Chat with Us
+  </div>
+  <!-- Link to External JS -->
+<script src="script.js"></script>
+
+
+  <!-- Footer -->
+  <footer class="bg-white shadow-lg py-6">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-gray-700">&copy; 2025 TECHSAGE Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Animation Library -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
